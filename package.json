@@ -1,0 +1,29 @@
+{
+  "name": "koa2-upload",
+  "version": "1.0.0",
+  "description": "A middleware for koa2 to handle file upload based on formidable",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/booksaye/koa2-upload.git"
+  },
+  "keywords": [
+    "koa",
+    "koa2",
+    "middleware",
+    "file",
+    "upload"
+  ],
+  "author": "booksaye",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/booksaye/koa2-upload/issues"
+  },
+  "homepage": "https://github.com/booksaye/koa2-upload#readme",
+  "dependencies": {
+    "formidable": "^1.2.1"
+  }
+}

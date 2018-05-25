@@ -46,7 +46,6 @@ module.exports = function (options = {}) {
 
     if (options.autoDelete) {
       for (let key in args.files) {
-        console.log(args.files[key].path);
         fs.unlinkSync(args.files[key].path);
       }
     }

@@ -28,6 +28,3 @@ npm i --save koa2-upload
 ### Options
 
   autoDelete: 默认值 false ，设置为true在请求结束之后会删除本地缓存文件
-
-## License
-
