@@ -1,7 +1,3 @@
-// 文件上传处理中间件
-// 支持多文件上传，同名文件后者覆盖前者
-// ctx.args.fields
-// ctx.args.files
 const fs = require('fs');
 const formidable = require('formidable');
 
