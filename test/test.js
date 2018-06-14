@@ -5,18 +5,23 @@ const Koa = require('koa');
 const fileHandler = require('../index');
 
 const app = new Koa();
+
 app.use(fileHandler({
-  autoDelete: true
+  stream: true
 }));
 app.use(async (ctx) => {
-  ctx.body = ctx.files.myFile.name;
+  ctx.body = {
+    fields: ctx.fields,
+    stream: ctx.streams,
+    files: ctx.files
+  };
 });
 
 app.listen(3000);
 
 describe('测试上传功能', async function () {
   const filePath = 'package.json';
-
+  
   it('upload test.js', async function () {
     const data = {
       myName: 'Steve',
